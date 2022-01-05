@@ -1,0 +1,40 @@
+{
+    "name": "HideLinks_Bot",
+    "description": "Make short link by using HideLinks API key",
+    "keywords": [
+        "telegram",
+        "gplink"
+    ],
+    "website": "https://github.com/JayRaj8833/Hidelinks-Url-Shortner",
+    "repository": "https://Telegram.me/JayRaj8833",
+    "env": {
+        "BOT_TOKEN": {
+            "description": "Your bot token For @BotFather",
+            "value": ""
+        },
+        "API_ID": {
+            "description": "Get this value from https://my.telegram.org",
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Get this value from https://my.telegram.org",
+            "value": ""
+        },
+        "API_KEY": {
+            "description": "Get API key from < https://hidelinks.in/member/tools/api >",
+            "value": ""
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
